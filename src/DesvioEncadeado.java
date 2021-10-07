@@ -23,14 +23,12 @@ public class DesvioEncadeado {
 		
 		if (idade < 16) {
 			System.out.println("O passageiro não pode votar e nem embarcar");
-		} else {
-			if (idade >= 18) {
+		} else if (idade >= 18) {
 				System.out.println("O passageiro é obrigado a votar e pode embarcar");
-			} else {
+		  } else {
 				System.out.println("O passageiro pode votar e pode embarcar");
 			}
-		}
-
+		
 		leitor.close();
 
 	}
